@@ -10,6 +10,8 @@ typescript、单元测试的使用技巧、vscode插件脚手架、vscode发布�
 
 2. 用户可以通过命令的方式删除光标所在的函数
 
+3. 只需要支持js，不支持ts
+
 Tasking
 
 1. vscode应该如何删除指定的字符
