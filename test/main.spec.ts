@@ -9,8 +9,8 @@ test('init', () => {
 			return 'name'
 		}
 	`;
-
-    const functionNode = getFunctionNode(code);
+    let index = 10;
+    const functionNode = getFunctionNode(code, index);
     expect(functionNode).toEqual({
         name: "getName",
         start: {
