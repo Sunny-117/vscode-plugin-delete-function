@@ -65,6 +65,18 @@ vsce publish --yarn
 "publisher": "cuixiaorui",
 ```
 
+**支持快捷键**
+
+```json
+"keybindings":[
+    {
+    "command": "vsc-delete-func.helloWorld",
+    "key": "ctrl+R R",// win
+    "mac":"cmd+R R"// mac
+    }
+]
+```
+
 # Reference
 
 https://www.npmjs.com/package/generator-code
