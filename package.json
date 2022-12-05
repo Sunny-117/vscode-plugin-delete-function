@@ -19,22 +19,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:delete-function.deleteFunction"
+    "onCommand:vsc-delete-func.helloWorld"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "delete-function.deleteFunction",
-        "category": "DeleteFunction",
-        "title": "Delete Function"
-      }
-    ],
-    "keybindings": [
-      {
-        "command": "delete-function.deleteFunction",
-        "key": "ctrl+R F",
-        "mac": "cmd+R F"
+        "command": "vsc-delete-func.helloWorld",
+        "title": "Hello World"
       }
     ]
   },
