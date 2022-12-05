@@ -34,8 +34,38 @@ https://code.visualstudio.com/api/get-started/your-first-extension
 - 单元测试
 
 
+# 部署
+
+1. vsce login sunny
+
+2. 注册
+
+3. token
+
+![](assets/2022-12-05-21-45-50.png)
+
+4. vsce package --yarn
+
+如果失败，先删除 node_modules, 重新用 yarn 安装
+
+5. 发布
+
+方法1
+
+![](assets/2022-12-05-21-48-52.png)
+
+方法2
+
+vsce publish --yarn
+
+```json
+// 加上 
+"publisher": "cuixiaorui",
+```
 
 # Reference
 
 https://www.npmjs.com/package/generator-code
 https://juejin.cn/post/7032977183790333960
+https://github.com/cuixiaorui/delete-function.git
+注册：https://azure.microsoft.com/zh-cn/products/devops/?cdn=disable
