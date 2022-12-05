@@ -30,6 +30,23 @@ export function getFunctionNode(code: string, index: number): FunctionNode | und
 				};
 			}
 
+		},
+		ArrowFunctionExpression(path) {
+			const variableDeclarationPath = path.parentPath.parentPath;// 没有类型
+			function getName() {
+				return Object.keys(path.parentPath.getBindingIdentifiers())[0];
+			}
+			if (variableDeclarationPath?.isVariableDeclaration()) {
+				console.log(variableDeclarationPath);// 获取到了类型
+				if (index >= variableDeclarationPath?.node?.start! && index <= variableDeclarationPath?.node?.end!) {
+					functionNode = {
+						name: getName(),
+						start: variableDeclarationPath.node.loc?.start,
+						end: variableDeclarationPath.node.loc?.end
+					};
+				}
+			}
+
 		}
 	});
 	return functionNode;
