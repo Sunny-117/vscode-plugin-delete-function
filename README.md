@@ -20,11 +20,18 @@ ast
 
 ![](assets/2022-12-05-17-26-43.png)
 
+生成ast：babel
 
 💻 vscode 插件教程 Your First Extension:
 
 https://code.visualstudio.com/api/get-started/your-first-extension
 
+
+调试：
+
+- f5 调试
+
+- 单元测试
 
 
 
