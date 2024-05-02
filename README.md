@@ -80,6 +80,9 @@ vsce publish --yarn
 # Reference
 
 https://www.npmjs.com/package/generator-code
+
 https://juejin.cn/post/7032977183790333960
+
 https://github.com/cuixiaorui/delete-function.git
+
 注册：https://azure.microsoft.com/zh-cn/products/devops/?cdn=disable
